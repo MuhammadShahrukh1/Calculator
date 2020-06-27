@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="min">
+        <div class="screen">
+            <input type="text" class="display" id="result">
+        </div>
+        <div class="row">
+            <button class="operator" onclick="clearall()">C</button>
+            <button class="operator" onclick="clearone()">CE</button>
+            <button class="empty"></button>
+            <button class="empty"></button>
+        </div>
+        <div class="row">
+            <button class="number" onclick="getnum(7)">7</button>
+            <button class="number" onclick="getnum(8)">8</button>
+            <button class="number" onclick="getnum(9)">9</button>
+            <button class="operator" onclick="getnum('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="number" onclick="getnum(4)">4</button>
+            <button class="number" onclick="getnum(5)">5</button>
+            <button class="number" onclick="getnum(6)">6</button>
+            <button class="operator" onclick="getnum('*')">X</button>
+        </div>
+        <div class="row">
+            <button class="number" onclick="getnum(1)">1</button>
+            <button class="number" onclick="getnum(2)">2</button>
+            <button class="number" onclick="getnum(3)">3</button>
+            <button class="operator" onclick="getnum('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="empty"></button>
+            <button class="number" onclick="getnum(0)">0</button>
+            <button class="number" onclick="getnum('+')">+</button>
+            <button class="operator" onclick="compute()">=</button>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
